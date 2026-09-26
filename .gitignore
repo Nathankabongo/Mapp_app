@@ -1,3 +1,6 @@
+# Nested repositories or side projects
+binary/
+
 # Virtual environments
 .venv/
 .win_venv/
