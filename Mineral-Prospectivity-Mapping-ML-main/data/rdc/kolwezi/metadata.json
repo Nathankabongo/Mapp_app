@@ -1,0 +1,39 @@
+{
+  "title": "Jeu d'exemple Kolwezi Cu-Co",
+  "description": "Données SIG synthétiques géoréférencées simulant la ceinture cuprifère de Kolwezi (Lualaba, RDC). Permet de tester le pipeline complet sans données CAMI/Xcalibur réelles.",
+  "region": "kolwezi",
+  "province": "Lualaba",
+  "commodity": "cu_co",
+  "crs": "EPSG:32733",
+  "origin_utm": {
+    "x": 1642323.9673742594,
+    "y": 8803725.306471635
+  },
+  "center_wgs84": {
+    "lat": -10.716,
+    "lon": 25.465
+  },
+  "extent_m": {
+    "width": 16000.0,
+    "height": 16000.0
+  },
+  "shape": {
+    "rows": 64,
+    "cols": 64,
+    "bands": 8
+  },
+  "deposits": {
+    "total": 60,
+    "positive": 27,
+    "negative": 33
+  },
+  "files": {
+    "raster": "stack_multiphysics.tif",
+    "samples": "deposits_cu_co.gpkg",
+    "training": "training.gpkg",
+    "testing": "testing.gpkg",
+    "metadata": "metadata.json",
+    "bands": "stack_multiphysics.bands.json"
+  },
+  "seed": 42
+}

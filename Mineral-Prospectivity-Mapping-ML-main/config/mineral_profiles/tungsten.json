@@ -1,0 +1,17 @@
+{
+  "mineral": "tungstène",
+  "code": "w",
+  "aliases": ["tungstène", "tungstene", "tungsten", "w"],
+  "display_name": "Tungstène",
+  "geological_context": "Systèmes 3T — Est de la RDC",
+  "favorable_lithologies": ["filons", "pegmatite"],
+  "alteration_signatures": [],
+  "geochemical_elements": ["W", "Sn", "Ta"],
+  "geophysical_signatures": ["linéaments"],
+  "remote_sensing_indicators": ["linéaments"],
+  "known_deposit_types": ["filonien"],
+  "exploration_indicators": ["occurrences W", "3T"],
+  "atlas_layer": "coltan",
+  "raster_commodity": null,
+  "economic_parameters": {"strategic": true, "critical_mineral": true, "note": "Paramètres non inventés"}
+}

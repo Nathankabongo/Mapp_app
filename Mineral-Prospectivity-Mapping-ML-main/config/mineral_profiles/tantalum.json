@@ -1,0 +1,21 @@
+{
+  "mineral": "coltan",
+  "code": "ta",
+  "aliases": ["coltan", "tantale", "ta", "niobium", "nb"],
+  "display_name": "Coltan (Ta-Nb)",
+  "geological_context": "Pegmatites et placers du Kivu / Maniema",
+  "favorable_lithologies": ["pegmatite", "alluvions"],
+  "alteration_signatures": ["altération pegmatitique"],
+  "geochemical_elements": ["Ta", "Nb", "Sn", "W"],
+  "geophysical_signatures": ["radiométrie", "linéaments"],
+  "remote_sensing_indicators": ["drainage", "linéaments"],
+  "known_deposit_types": ["pegmatite", "alluvionnaire"],
+  "exploration_indicators": ["occurrences coltan", "drainage"],
+  "atlas_layer": "coltan",
+  "raster_commodity": null,
+  "economic_parameters": {
+    "strategic": true,
+    "critical_mineral": true,
+    "note": "Paramètres économiques à configurer — non inventés"
+  }
+}

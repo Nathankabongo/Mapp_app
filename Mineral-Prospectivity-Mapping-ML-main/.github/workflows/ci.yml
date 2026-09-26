@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master, develop]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev,api]"
+
+      - name: Ruff (lint)
+        run: ruff check compass_core cli api tests
+
+      - name: Pytest
+        run: pytest --cov=compass_core --cov-report=term-missing
+
+  docker-smoke:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t critical-minerals-compass:ci .
+
+      - name: Smoke test CLI in container
+        run: |
+          docker run --rm critical-minerals-compass:ci \
+            python -c "from compass_core.config.demo import build_demo_config; print('ok')"

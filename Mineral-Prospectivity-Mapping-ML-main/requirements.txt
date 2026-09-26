@@ -1,0 +1,43 @@
+# CriticalMineralsCompass — dépendances de base
+numpy>=1.24
+scikit-learn>=1.3
+geopandas>=0.14
+shapely>=2.0
+matplotlib>=3.7
+pandas>=2.0
+seaborn>=0.13
+scipy>=1.11
+
+
+# ML profond (ANN, CNN) — optionnel
+tensorflow>=2.14
+scikeras>=0.12
+
+# SIG — installer GDAL via conda/apt sur Linux
+# GDAL>=3.6
+
+# API cloud
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.0
+
+# Interface
+streamlit>=1.32
+plotly>=5.18
+
+# Rapports PDF
+reportlab>=4.0
+
+# Développement
+pytest>=8.0
+pytest-cov>=4.1
+ruff>=0.3
+
+# Traçabilité & Blockchain
+cryptography>=42.0
+web3>=6.15.0
+
+# Geofencing & Indexation Spatiale
+h3>=4.0
+
+

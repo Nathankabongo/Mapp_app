@@ -1,0 +1,173 @@
+{
+  "version": "1.0",
+  "title": "Knowledge base Minerai × Zone — RDC",
+  "disclaimer": "Présence documentée ≠ prospectivité calculée. Sources : atlas local, bassins miniers, littérature publique. Pas une inventaire CAMI officiel.",
+  "pilot_prospectivity": {
+    "id": "kolwezi_cu_co",
+    "label": "Emprise pilote Cu-Co Kolwezi",
+    "provinces": ["Lualaba"],
+    "localities": ["Kolwezi", "Tenke", "Mutanda", "Kamoto"],
+    "minerals": ["cuivre", "cobalt"],
+    "raster_commodity": "cu_co",
+    "note": "Seul raster de prospectivité automatique actuellement disponible."
+  },
+  "provinces": {
+    "Lualaba": {
+      "basin": "Copperbelt katangais",
+      "minerals": [
+        {"mineral": "cuivre", "evidence_level": "documented", "flags": ["occurrences", "geology_context", "pilot_raster"], "deposit_types": ["stratiforme", "filonien"], "notes": "Copperbelt — Kolwezi, Tenke-Fungurume, Mutanda"},
+        {"mineral": "cobalt", "evidence_level": "documented", "flags": ["occurrences", "geology_context", "pilot_raster", "associated_cu"], "deposit_types": ["stratiforme"], "notes": "Associé Cu-Co"},
+        {"mineral": "nickel", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": [], "notes": "Mentions limitées — données à vérifier"},
+        {"mineral": "manganèse", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": [], "notes": "Occurrences ponctuelles sud-est"}
+      ]
+    },
+    "Haut-Katanga": {
+      "basin": "Copperbelt katangais",
+      "minerals": [
+        {"mineral": "cuivre", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["stratiforme", "filonien"], "notes": "Lubumbashi, Likasi, Kipushi, Kambove"},
+        {"mineral": "cobalt", "evidence_level": "documented", "flags": ["occurrences", "geology_context", "associated_cu"], "deposit_types": ["stratiforme"], "notes": "Associé Cu-Co"},
+        {"mineral": "manganèse", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": [], "notes": "Selon données disponibles"},
+        {"mineral": "lithium", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": ["pegmatite"], "notes": "Potentiel étudié — pas de raster"}
+      ]
+    },
+    "Haut-Lomami": {
+      "basin": "Katanga",
+      "minerals": [
+        {"mineral": "cuivre", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": [], "notes": "Contexte katangais — données limitées"},
+        {"mineral": "cobalt", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": [], "notes": "Associé possible — à documenter"}
+      ]
+    },
+    "Tanganyika": {
+      "basin": "Pegmatites Manono",
+      "minerals": [
+        {"mineral": "lithium", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["pegmatite"], "notes": "Manono-Kitotolo"},
+        {"mineral": "coltan", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": ["pegmatite"], "notes": "Associé pegmatites LCT"},
+        {"mineral": "tantale", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": ["pegmatite"], "notes": "À distinguer du coltan générique"},
+        {"mineral": "étain", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": ["pegmatite"], "notes": "Contexte 3T possible"},
+        {"mineral": "or", "evidence_level": "limited", "flags": ["occurrences"], "deposit_types": ["filonien"], "notes": "Occurrences historiques limitées"}
+      ]
+    },
+    "Nord-Kivu": {
+      "basin": "3T / aurifère Est",
+      "minerals": [
+        {"mineral": "or", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["filonien", "artisanal"], "notes": "Ceinture Est"},
+        {"mineral": "coltan", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["pegmatite", "alluvionnaire"], "notes": "Rubaya et placers"},
+        {"mineral": "tantale", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["pegmatite"], "notes": "Composante Ta du 3T"},
+        {"mineral": "étain", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["pegmatite", "alluvionnaire"], "notes": "Systèmes 3T"},
+        {"mineral": "tungstène", "evidence_level": "documented", "flags": ["geology_context"], "deposit_types": ["filonien"], "notes": "Associé 3T"},
+        {"mineral": "niobium", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": ["pegmatite"], "notes": "Souvent associé coltan"}
+      ]
+    },
+    "Sud-Kivu": {
+      "basin": "3T / aurifère Est",
+      "minerals": [
+        {"mineral": "or", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["filonien", "artisanal"], "notes": "Twangiza, Kamituga"},
+        {"mineral": "coltan", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["pegmatite", "alluvionnaire"], "notes": "Numbi, Kalehe"},
+        {"mineral": "tantale", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["pegmatite"], "notes": "Composante Ta"},
+        {"mineral": "étain", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["pegmatite"], "notes": "3T"},
+        {"mineral": "tungstène", "evidence_level": "documented", "flags": ["geology_context"], "deposit_types": ["filonien"], "notes": "3T"}
+      ]
+    },
+    "Maniema": {
+      "basin": "3T / aurifère Est",
+      "minerals": [
+        {"mineral": "or", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["filonien", "artisanal"], "notes": "Ceinture Maniema"},
+        {"mineral": "coltan", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["pegmatite"], "notes": "3T"},
+        {"mineral": "tantale", "evidence_level": "documented", "flags": ["geology_context"], "deposit_types": ["pegmatite"], "notes": "Ta"},
+        {"mineral": "étain", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["pegmatite"], "notes": "Sn"},
+        {"mineral": "tungstène", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": ["filonien"], "notes": "W"},
+        {"mineral": "lithium", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": ["pegmatite"], "notes": "Pegmatites — données limitées"}
+      ]
+    },
+    "Ituri": {
+      "basin": "Aurifère oriental",
+      "minerals": [
+        {"mineral": "or", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["filonien"], "notes": "Mongbwalu et ceinture Ituri"}
+      ]
+    },
+    "Haut-Uélé": {
+      "basin": "Aurifère Kibali",
+      "minerals": [
+        {"mineral": "or", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["filonien", "orogénique"], "notes": "Kibali, Durba"}
+      ]
+    },
+    "Bas-Uélé": {
+      "basin": "Nord-Est",
+      "minerals": [
+        {"mineral": "or", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": [], "notes": "Potentiel à documenter — pas de raster"}
+      ]
+    },
+    "Tshopo": {
+      "basin": "Nord-Est",
+      "minerals": [
+        {"mineral": "or", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": [], "notes": "Données limitées"}
+      ]
+    },
+    "Kasaï": {
+      "basin": "Diamantifère Kasaï",
+      "minerals": [
+        {"mineral": "diamant", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["kimberlite", "alluvionnaire"], "notes": "Tshikapa"},
+        {"mineral": "or", "evidence_level": "limited", "flags": ["occurrences"], "deposit_types": [], "notes": "Occurrences ponctuelles"}
+      ]
+    },
+    "Kasaï-Central": {
+      "basin": "Diamantifère Kasaï",
+      "minerals": [
+        {"mineral": "diamant", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["kimberlite", "alluvionnaire"], "notes": "Bassin Kasaï"}
+      ]
+    },
+    "Kasaï-Oriental": {
+      "basin": "Diamantifère Kasaï",
+      "minerals": [
+        {"mineral": "diamant", "evidence_level": "documented", "flags": ["occurrences", "geology_context"], "deposit_types": ["kimberlite", "alluvionnaire"], "notes": "Mbuji-Mayi / Bakwanga"},
+        {"mineral": "or", "evidence_level": "limited", "flags": ["occurrences"], "deposit_types": [], "notes": "Occurrences limitées"}
+      ]
+    },
+    "Sankuru": {
+      "basin": "Kasaï élargi",
+      "minerals": [
+        {"mineral": "diamant", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": ["alluvionnaire"], "notes": "Selon données disponibles"}
+      ]
+    },
+    "Lomami": {
+      "basin": "Centre-Sud",
+      "minerals": [
+        {"mineral": "diamant", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": [], "notes": "Données limitées"},
+        {"mineral": "cuivre", "evidence_level": "limited", "flags": ["geology_context"], "deposit_types": [], "notes": "Hors Copperbelt principal"}
+      ]
+    },
+    "Kinshasa": {
+      "basin": "Administratif",
+      "minerals": [],
+      "note": "Province administrative — pas de district minier majeur documenté dans l'atlas local"
+    },
+    "Kongo-Central": {
+      "basin": "Ouest",
+      "minerals": [],
+      "note": "Pas d'occurrences majeures dans l'atlas local actuel"
+    },
+    "Kwango": {"basin": "Ouest", "minerals": [], "note": "Données minières locales absentes dans l'atlas actuel"},
+    "Kwilu": {"basin": "Ouest", "minerals": [], "note": "Données minières locales absentes dans l'atlas actuel"},
+    "Mai-Ndombe": {"basin": "Ouest", "minerals": [], "note": "Données minières locales absentes dans l'atlas actuel"},
+    "Équateur": {"basin": "Nord-Ouest", "minerals": [], "note": "Données minières locales absentes dans l'atlas actuel"},
+    "Nord-Ubangi": {"basin": "Nord-Ouest", "minerals": [], "note": "Données minières locales absentes dans l'atlas actuel"},
+    "Sud-Ubangi": {"basin": "Nord-Ouest", "minerals": [], "note": "Données minières locales absentes dans l'atlas actuel"},
+    "Tshuapa": {"basin": "Nord-Ouest", "minerals": [], "note": "Données minières locales absentes dans l'atlas actuel"},
+    "Mongala": {"basin": "Nord-Ouest", "minerals": [], "note": "Données minières locales absentes dans l'atlas actuel"}
+  },
+  "localities": {
+    "Kolwezi": {"province": "Lualaba", "lat": -10.716, "lon": 25.465, "mineral_default": "cuivre"},
+    "Tenke": {"province": "Lualaba", "lat": -10.600, "lon": 26.150, "mineral_default": "cuivre"},
+    "Mutanda": {"province": "Lualaba", "lat": -10.781, "lon": 26.437, "mineral_default": "cuivre"},
+    "Likasi": {"province": "Haut-Katanga", "lat": -10.983, "lon": 26.733, "mineral_default": "cuivre"},
+    "Lubumbashi": {"province": "Haut-Katanga", "lat": -11.664, "lon": 27.479, "mineral_default": "cuivre"},
+    "Kipushi": {"province": "Haut-Katanga", "lat": -11.761, "lon": 27.233, "mineral_default": "cuivre"},
+    "Manono": {"province": "Tanganyika", "lat": -7.283, "lon": 27.400, "mineral_default": "lithium"},
+    "Kibali": {"province": "Haut-Uélé", "lat": 3.120, "lon": 29.450, "mineral_default": "or"},
+    "Twangiza": {"province": "Sud-Kivu", "lat": -2.950, "lon": 28.650, "mineral_default": "or"},
+    "Kamituga": {"province": "Sud-Kivu", "lat": -3.067, "lon": 28.183, "mineral_default": "or"},
+    "Mbuji-Mayi": {"province": "Kasaï-Oriental", "lat": -6.150, "lon": 23.600, "mineral_default": "diamant"},
+    "Tshikapa": {"province": "Kasaï", "lat": -6.416, "lon": 20.800, "mineral_default": "diamant"},
+    "Kinshasa": {"province": "Kinshasa", "lat": -4.325, "lon": 15.322, "mineral_default": null}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "mineral": "cobalt",
+  "code": "co",
+  "aliases": ["cobalt", "co"],
+  "display_name": "Cobalt",
+  "geological_context": "Associé au cuivre stratiforme katangais",
+  "favorable_lithologies": ["Formation des Mines", "R.A.T.", "dolomies"],
+  "alteration_signatures": ["oxydation", "cobaltocalcite"],
+  "geochemical_elements": ["Co", "Cu", "Ni", "Mn"],
+  "geophysical_signatures": ["contrastes de densité", "radiométrie faible"],
+  "remote_sensing_indicators": ["oxydes de Fe", "sols exposés"],
+  "known_deposit_types": ["stratiforme sédimentaire", "supergène"],
+  "exploration_indicators": ["occurrences Cu-Co", "proximité structures"],
+  "atlas_layer": "cu_co",
+  "raster_commodity": "cu_co",
+  "economic_parameters": {
+    "strategic": true,
+    "critical_mineral": true,
+    "note": "Paramètres économiques à configurer — non inventés"
+  }
+}

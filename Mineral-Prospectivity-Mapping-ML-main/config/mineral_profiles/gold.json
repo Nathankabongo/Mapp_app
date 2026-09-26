@@ -1,0 +1,21 @@
+{
+  "mineral": "or",
+  "code": "au",
+  "aliases": ["or", "au", "gold"],
+  "display_name": "Or",
+  "geological_context": "Greenstone belts et filons birimiens / kibariens",
+  "favorable_lithologies": ["schistes verts", "quartzites", "métavolcanites"],
+  "alteration_signatures": ["silicification", "séricite", "oxydes de Fe"],
+  "geochemical_elements": ["Au", "As", "Sb", "Cu"],
+  "geophysical_signatures": ["linéaments magnétiques", "contrastes structuraux"],
+  "remote_sensing_indicators": ["linéaments", "oxydes de Fe", "argiles"],
+  "known_deposit_types": ["filonien", "orogénique", "alluvionnaire"],
+  "exploration_indicators": ["structures", "occurrences Au", "altération"],
+  "atlas_layer": "au",
+  "raster_commodity": null,
+  "economic_parameters": {
+    "strategic": true,
+    "critical_mineral": false,
+    "note": "Paramètres économiques à configurer — non inventés"
+  }
+}

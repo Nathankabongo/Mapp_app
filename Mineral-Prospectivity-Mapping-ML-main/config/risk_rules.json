@@ -1,0 +1,8 @@
+{
+  "geotech_slope_high_deg": 25.0,
+  "geotech_slope_mid_deg": 15.0,
+  "hydro_sensitive_m": 500.0,
+  "hydro_moderate_m": 2000.0,
+  "social_high_density": 200.0,
+  "social_mid_density": 50.0
+}

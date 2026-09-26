@@ -1,0 +1,53 @@
+services:
+  api:
+    build: .
+    container_name: compass-api
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      COMPASS_JWT_ENABLED: "true"
+      COMPASS_JWT_SECRET: ${COMPASS_JWT_SECRET:-compass-rdc-dev-secret}
+      COMPASS_API_USER: ${COMPASS_API_USER:-admin}
+      COMPASS_API_PASSWORD: ${COMPASS_API_PASSWORD:-compass-rdc}
+    volumes:
+      - ./outputs:/app/outputs
+      - ./config:/app/config:ro
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  streamlit:
+    build: .
+    container_name: compass-ui
+    command: >
+      streamlit run app/streamlit_app.py
+      --server.port=8501
+      --server.address=0.0.0.0
+      --browser.gatherUsageStats=false
+    ports:
+      - "8501:8501"
+    environment:
+      COMPASS_API_URL: http://api:8000
+    volumes:
+      - ./outputs:/app/outputs
+      - ./config:/app/config:ro
+      - ./data:/app/data
+    depends_on:
+      api:
+        condition: service_healthy
+
+  docs:
+    build: .
+    container_name: compass-docs
+    command: python scripts/export_openapi_pdf.py --output outputs/docs/api_reference.pdf
+    volumes:
+      - ./outputs:/app/outputs
+    depends_on:
+      api:
+        condition: service_healthy
+    profiles:
+      - docs

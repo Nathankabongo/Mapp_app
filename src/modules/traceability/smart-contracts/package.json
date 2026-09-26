@@ -1,0 +1,26 @@
+{
+  "name": "@critical-minerals-compass/traceability-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts OpenZeppelin pour la traçabilité et tokenisation des minerais stratégiques en RDC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Contracts ready. Run with npx hardhat test or forge test\""
+  },
+  "keywords": [
+    "mining",
+    "traceability",
+    "openzeppelin",
+    "erc1155",
+    "erc721",
+    "cirgl",
+    "drc"
+  ],
+  "author": "CriticalMineralsCompass",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.0"
+  }
+}

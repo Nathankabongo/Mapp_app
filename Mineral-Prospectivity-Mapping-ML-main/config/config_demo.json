@@ -1,0 +1,29 @@
+{
+  "project_name": "demo-synthetic",
+  "region": {
+    "name": "kolwezi",
+    "commodity": "cu_co",
+    "province": "Lualaba",
+    "description": "Configuration de démonstration — aucun fichier SIG requis"
+  },
+  "data": {
+    "raster": "(synthetic)",
+    "samples": "(synthetic)",
+    "training": "(synthetic)",
+    "testing": "(synthetic)",
+    "output_dir": "outputs/demo"
+  },
+  "model": {
+    "name": "woe",
+    "random_seed": 42,
+    "cv_folds": 3,
+    "grid_search": false,
+    "params": { "n_bins": 4 }
+  },
+  "export": {
+    "geotiff": false,
+    "geopackage": false,
+    "pdf_report": false,
+    "mask_nodata": true
+  }
+}

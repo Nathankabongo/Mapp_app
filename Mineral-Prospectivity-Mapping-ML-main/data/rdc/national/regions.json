@@ -1,0 +1,94 @@
+{
+  "country": "République Démocratique du Congo",
+  "iso": "COD",
+  "crs": "EPSG:4326",
+  "map_default": {
+    "latitude": -4.0375,
+    "longitude": 21.7587,
+    "zoom": 5
+  },
+  "mining_basins": [
+    {
+      "id": "grand_katanga",
+      "label": "Katanga / Lualaba (Copperbelt)",
+      "commodities": ["cu_co", "ni", "mn"],
+      "provinces": ["Lualaba", "Haut-Katanga", "Haut-Lomami"],
+      "center": [-10.716, 25.465],
+      "zoom": 7
+    },
+    {
+      "id": "tanganyika",
+      "label": "Tanganyika (Manono)",
+      "commodities": ["li", "coltan", "au"],
+      "provinces": ["Tanganyika"],
+      "center": [-7.283, 27.4],
+      "zoom": 7
+    },
+    {
+      "id": "kasai",
+      "label": "Kasaï diamantifère",
+      "commodities": ["diamond"],
+      "provinces": ["Kasaï-Oriental", "Kasaï", "Kasaï-Central", "Sankuru", "Lomami"],
+      "center": [-6.15, 23.6],
+      "zoom": 7
+    },
+    {
+      "id": "est",
+      "label": "Grand Kivu / Maniema / Ituri / Uélé",
+      "commodities": ["au", "coltan", "sn", "w", "ta"],
+      "provinces": ["Nord-Kivu", "Sud-Kivu", "Maniema", "Ituri", "Haut-Uélé", "Bas-Uélé", "Tshopo"],
+      "center": [-1.5, 28.5],
+      "zoom": 6
+    },
+    {
+      "id": "ouest",
+      "label": "Ouest / Kinshasa",
+      "commodities": [],
+      "provinces": ["Kongo-Central", "Kinshasa", "Kwango", "Kwilu", "Mai-Ndombe"],
+      "center": [-4.5, 16.0],
+      "zoom": 6
+    },
+    {
+      "id": "nord_ouest",
+      "label": "Équateur / Ubangi / Tshuapa / Mongala",
+      "commodities": [],
+      "provinces": ["Équateur", "Nord-Ubangi", "Sud-Ubangi", "Tshuapa", "Mongala"],
+      "center": [1.5, 20.0],
+      "zoom": 6
+    }
+  ],
+  "provinces": [
+    {"name": "Kinshasa", "bbox": [15.1, -4.55, 15.6, -4.15], "center": [-4.325, 15.322]},
+    {"name": "Kongo-Central", "bbox": [12.0, -6.5, 16.5, -4.5], "center": [-5.5, 14.5]},
+    {"name": "Kwango", "bbox": [16.0, -8.0, 19.5, -4.5], "center": [-6.5, 17.5]},
+    {"name": "Kwilu", "bbox": [16.5, -5.5, 20.0, -3.0], "center": [-4.5, 18.5]},
+    {"name": "Mai-Ndombe", "bbox": [16.0, -4.0, 20.0, -1.0], "center": [-2.5, 18.0]},
+    {"name": "Équateur", "bbox": [18.0, -1.5, 22.0, 2.5], "center": [0.5, 20.0]},
+    {"name": "Sud-Ubangi", "bbox": [18.0, 2.0, 22.0, 5.0], "center": [3.5, 20.0]},
+    {"name": "Nord-Ubangi", "bbox": [19.0, 3.5, 23.0, 5.5], "center": [4.5, 21.0]},
+    {"name": "Mongala", "bbox": [20.0, 1.0, 24.0, 3.5], "center": [2.2, 22.0]},
+    {"name": "Tshuapa", "bbox": [20.0, -2.5, 25.0, 1.5], "center": [-0.5, 22.5]},
+    {"name": "Tshopo", "bbox": [23.0, -2.0, 28.0, 2.5], "center": [0.5, 25.0]},
+    {"name": "Bas-Uélé", "bbox": [23.5, 2.5, 27.0, 5.2], "center": [3.8, 25.0]},
+    {"name": "Haut-Uélé", "bbox": [26.0, 2.5, 30.5, 5.2], "center": [3.5, 28.5]},
+    {"name": "Ituri", "bbox": [28.0, 1.0, 31.5, 3.8], "center": [1.8, 29.8]},
+    {"name": "Nord-Kivu", "bbox": [27.5, -2.0, 30.5, 1.0], "center": [-0.8, 28.8]},
+    {"name": "Sud-Kivu", "bbox": [26.5, -5.0, 29.5, -1.5], "center": [-3.0, 28.5]},
+    {"name": "Maniema", "bbox": [25.0, -4.5, 28.5, -1.0], "center": [-2.8, 26.5]},
+    {"name": "Sankuru", "bbox": [22.0, -4.5, 25.5, -1.5], "center": [-3.0, 23.5]},
+    {"name": "Kasaï", "bbox": [19.0, -7.5, 23.0, -5.0], "center": [-6.4, 20.8]},
+    {"name": "Kasaï-Central", "bbox": [20.0, -7.2, 23.5, -4.5], "center": [-5.9, 22.4]},
+    {"name": "Kasaï-Oriental", "bbox": [22.0, -7.0, 25.5, -5.0], "center": [-6.15, 23.6]},
+    {"name": "Lomami", "bbox": [23.0, -8.0, 26.0, -5.5], "center": [-6.8, 24.5]},
+    {"name": "Tanganyika", "bbox": [26.5, -8.5, 30.0, -5.5], "center": [-7.0, 28.0]},
+    {"name": "Haut-Lomami", "bbox": [24.5, -9.5, 27.5, -7.0], "center": [-8.5, 26.0]},
+    {"name": "Lualaba", "bbox": [24.0, -11.8, 27.8, -9.2], "center": [-10.7, 25.5]},
+    {"name": "Haut-Katanga", "bbox": [26.0, -12.5, 30.5, -9.5], "center": [-11.0, 27.5]}
+  ],
+  "aliases": {
+    "Kasaï Oriental": "Kasaï-Oriental",
+    "Kasaï Central": "Kasaï-Central",
+    "Kongo Central": "Kongo-Central",
+    "Equateur": "Équateur"
+  }
+}

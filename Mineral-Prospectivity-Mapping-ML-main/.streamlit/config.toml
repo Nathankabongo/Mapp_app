@@ -1,0 +1,19 @@
+[server]
+headless = true
+port = 8501
+address = "0.0.0.0"
+
+[browser]
+gatherUsageStats = false
+serverAddress = "127.0.0.1"
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "dark"
+primaryColor = "#00F2FE"
+backgroundColor = "#060A10"
+secondaryBackgroundColor = "#0C121D"
+textColor = "#F8FAFC"
+font = "sans serif"

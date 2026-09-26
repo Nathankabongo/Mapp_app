@@ -1,0 +1,4 @@
+hole_id,x,y,z,azimuth,dip,depth_m,crs,data_class,source
+DEMO-DDH-001,25.450,-10.720,1450,0,-90,350,EPSG:4326,demo,démonstration pédagogique Kolwezi
+DEMO-DDH-002,25.480,-10.705,1480,45,-75,320,EPSG:4326,demo,démonstration pédagogique Kolwezi
+DEMO-DDH-003,25.430,-10.690,1420,180,-85,280,EPSG:4326,demo,démonstration pédagogique Kolwezi

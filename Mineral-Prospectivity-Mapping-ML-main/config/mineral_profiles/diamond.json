@@ -1,0 +1,17 @@
+{
+  "mineral": "diamant",
+  "code": "dia",
+  "aliases": ["diamant", "diamond"],
+  "display_name": "Diamant",
+  "geological_context": "Bassin diamantifère du Kasaï — kimberlites et alluvions",
+  "favorable_lithologies": ["kimberlite", "alluvions"],
+  "alteration_signatures": [],
+  "geochemical_elements": [],
+  "geophysical_signatures": ["anomalies magnétiques kimberlitiques"],
+  "remote_sensing_indicators": ["drainage"],
+  "known_deposit_types": ["kimberlite", "alluvionnaire"],
+  "exploration_indicators": ["occurrences diamant", "kimberlites"],
+  "atlas_layer": "diamond",
+  "raster_commodity": null,
+  "economic_parameters": {"strategic": true, "critical_mineral": false, "note": "Paramètres non inventés"}
+}

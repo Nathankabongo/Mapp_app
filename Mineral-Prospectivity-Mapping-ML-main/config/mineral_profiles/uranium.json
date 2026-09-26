@@ -1,0 +1,17 @@
+{
+  "mineral": "uranium",
+  "code": "u",
+  "aliases": ["uranium", "u"],
+  "display_name": "Uranium",
+  "geological_context": "Catalogue national — aucune prospectivité sans données adaptées",
+  "favorable_lithologies": [],
+  "alteration_signatures": [],
+  "geochemical_elements": ["U", "Th"],
+  "geophysical_signatures": ["radiométrie"],
+  "remote_sensing_indicators": [],
+  "known_deposit_types": [],
+  "exploration_indicators": ["radiométrie"],
+  "atlas_layer": null,
+  "raster_commodity": null,
+  "economic_parameters": {"strategic": true, "critical_mineral": true, "note": "Pas de modèle sans données dédiées"}
+}

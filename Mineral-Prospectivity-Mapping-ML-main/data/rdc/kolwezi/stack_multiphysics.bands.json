@@ -1,0 +1,47 @@
+{
+  "source": "CriticalMineralsCompass sample generator",
+  "crs": "EPSG:32733",
+  "pixel_size_m": 250.0,
+  "bands": [
+    {
+      "index": 1,
+      "name": "mag_total",
+      "description": "Anomalie magnétique totale (nT)"
+    },
+    {
+      "index": 2,
+      "name": "mag_derivative",
+      "description": "Dérivée verticale du champ magnétique"
+    },
+    {
+      "index": 3,
+      "name": "radiometry_k",
+      "description": "Potassium radiométrique (%)"
+    },
+    {
+      "index": 4,
+      "name": "radiometry_th",
+      "description": "Thorium radiométrique (ppm)"
+    },
+    {
+      "index": 5,
+      "name": "radiometry_u",
+      "description": "Uranium radiométrique (ppm)"
+    },
+    {
+      "index": 6,
+      "name": "spectro_clay",
+      "description": "Indice argiles/altération (spectroscopie)"
+    },
+    {
+      "index": 7,
+      "name": "geology_code",
+      "description": "Code lithologique (rasterisé)"
+    },
+    {
+      "index": 8,
+      "name": "elevation",
+      "description": "Modèle numérique de terrain (m)"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "mineral": "manganèse",
+  "code": "mn",
+  "aliases": ["manganèse", "manganese", "mn"],
+  "display_name": "Manganèse",
+  "geological_context": "Gisements sédimentaires / latéritiques — données locales à importer",
+  "favorable_lithologies": ["formations sédimentaires Mn", "latérites"],
+  "alteration_signatures": ["oxydes de Mn"],
+  "geochemical_elements": ["Mn", "Fe", "Co"],
+  "geophysical_signatures": ["contrastes de densité"],
+  "remote_sensing_indicators": ["oxydes", "sols exposés"],
+  "known_deposit_types": ["sédimentaire", "latéritique"],
+  "exploration_indicators": ["occurrences Mn", "oxydes"],
+  "atlas_layer": null,
+  "raster_commodity": null,
+  "economic_parameters": {
+    "strategic": true,
+    "critical_mineral": true,
+    "note": "Paramètres économiques à configurer — non inventés"
+  }
+}

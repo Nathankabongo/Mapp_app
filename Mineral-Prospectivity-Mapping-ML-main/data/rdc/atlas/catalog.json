@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "title": "Atlas minier RDC — CriticalMineralsCompass",
+  "description": "Référentiel cartographique multi-minéraux pour la République Démocratique du Congo. Compatible import CAMI / QGIS.",
+  "crs": "EPSG:4326",
+  "updated": "2026-09-02",
+  "schema": {
+    "required_fields": ["geometry", "commodity", "name"],
+    "optional_fields": [
+      "Value",
+      "province",
+      "deposit_type",
+      "status",
+      "geological_formation",
+      "source",
+      "cami_ref"
+    ],
+    "status_values": [
+      "exploitation",
+      "recherche",
+      "artisanal",
+      "prospect",
+      "abandonne"
+    ],
+    "deposit_types": [
+      "stratiforme",
+      "pegmatite",
+      "filons",
+      "alluvionnaire",
+      "kimberlite",
+      "laterite",
+      "porphyrique"
+    ]
+  },
+  "layers": [
+    {
+      "code": "cu_co",
+      "label": "Cuivre-Cobalt",
+      "filename": "deposits_cu_co.gpkg",
+      "color": "#1B6B4A",
+      "icon": "circle",
+      "provinces": ["Lualaba", "Haut-Katanga"],
+      "geological_belt": "Ceinture cuprifère du Katanga (Lufilian Arc)",
+      "description": "Gisements stratiformes et filoniens Cu-Co associés aux formations du Groupe de Roan.",
+      "data_source": "CAMI / USGS MRDS / synthèse BRGM-SADC",
+      "reference_deposits": ["Tenke-Fungurume", "Mutanda", "Kamoto", "Kolwezi"]
+    },
+    {
+      "code": "li",
+      "label": "Lithium",
+      "filename": "deposits_li.gpkg",
+      "color": "#7C3AED",
+      "icon": "circle",
+      "provinces": ["Tanganyika", "Maniema"],
+      "geological_belt": "Pegmatites de Manono-Kitotolo",
+      "description": "Spodumène et pegmatites LCT (Lithium-Césium-Tantale).",
+      "data_source": "AVZ Minerals / cartes géologiques RDC",
+      "reference_deposits": ["Manono-Kitotolo", "Mobambo"]
+    },
+    {
+      "code": "au",
+      "label": "Or",
+      "filename": "deposits_au.gpkg",
+      "color": "#D97706",
+      "icon": "circle",
+      "provinces": ["Ituri", "Haut-Uélé", "Maniema", "Sud-Kivu"],
+      "geological_belt": "Ceintures aurifères orientales et Kibali",
+      "description": "Filons aurifères, orpaillage artisanal et gisements orogéniques.",
+      "data_source": "CAMI / Banque Mondiale / SIGMines",
+      "reference_deposits": ["Kibali", "Mongbwalu", "Kamituga", "Durba"]
+    },
+    {
+      "code": "coltan",
+      "label": "Coltan (3T)",
+      "filename": "deposits_coltan.gpkg",
+      "color": "#2563EB",
+      "icon": "circle",
+      "provinces": ["Nord-Kivu", "Sud-Kivu", "Maniema"],
+      "geological_belt": "Pegmatites et placers Est de la RDC",
+      "description": "Tantalite, étain et tungstène — pegmatites et placers alluvionnaires.",
+      "data_source": "IPIS / cartes 3T Grands Lacs",
+      "reference_deposits": ["Rubaya", "Numbi", "Kalehe"]
+    },
+    {
+      "code": "diamond",
+      "label": "Diamant",
+      "filename": "deposits_diamond.gpkg",
+      "color": "#0891B2",
+      "icon": "circle",
+      "provinces": ["Kasaï Oriental", "Kasaï", "Kasaï Central"],
+      "geological_belt": "Bassin diamantifère du Kasaï",
+      "description": "Kimberlites et dépôts alluvionnaires — Mbuji-Mayi, Tshikapa.",
+      "data_source": "CAMI / MIBA archives",
+      "reference_deposits": ["Mbuji-Mayi", "Tshikapa", "Bakwanga"]
+    }
+  ],
+  "cadastre": {
+    "filename": "cadastre_permis.gpkg",
+    "description": "Permis miniers CAMI (recherche, exploitation) — couche polygonale",
+    "status_field": "statut",
+    "permit_field": "numero_permis"
+  }
+}

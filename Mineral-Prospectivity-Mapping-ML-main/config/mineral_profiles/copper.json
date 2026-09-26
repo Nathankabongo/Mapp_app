@@ -1,0 +1,21 @@
+{
+  "mineral": "cuivre",
+  "code": "cu",
+  "aliases": ["cuivre", "cu", "copper", "cu_co", "cuivre / cobalt"],
+  "display_name": "Cuivre",
+  "geological_context": "Ceinture cuprifère du Katanga — Groupe de Roan (R.A.T., Mines, Dipeta)",
+  "favorable_lithologies": ["dolomies", "schistes", "R.A.T.", "Formation des Mines"],
+  "alteration_signatures": ["oxydation", "malachite", "argiles"],
+  "geochemical_elements": ["Cu", "Co", "Zn", "Pb"],
+  "geophysical_signatures": ["anomalies magnétiques faibles à modérées", "contrastes de densité"],
+  "remote_sensing_indicators": ["oxydes de Fe", "argiles", "sols exposés"],
+  "known_deposit_types": ["stratiforme sédimentaire", "filonien"],
+  "exploration_indicators": ["proximité failles", "occurrences Cu-Co", "altération"],
+  "atlas_layer": "cu_co",
+  "raster_commodity": "cu_co",
+  "economic_parameters": {
+    "strategic": true,
+    "critical_mineral": true,
+    "note": "Paramètres économiques à configurer — non inventés"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "mineral": "étain",
+  "code": "sn",
+  "aliases": ["étain", "etain", "tin", "sn"],
+  "display_name": "Étain",
+  "geological_context": "Systèmes 3T — Est de la RDC",
+  "favorable_lithologies": ["pegmatite", "alluvions"],
+  "alteration_signatures": [],
+  "geochemical_elements": ["Sn", "Ta", "W"],
+  "geophysical_signatures": ["radiométrie", "linéaments"],
+  "remote_sensing_indicators": ["drainage", "linéaments"],
+  "known_deposit_types": ["pegmatite", "alluvionnaire"],
+  "exploration_indicators": ["occurrences Sn", "3T"],
+  "atlas_layer": "coltan",
+  "raster_commodity": null,
+  "economic_parameters": {"strategic": true, "critical_mineral": true, "note": "Paramètres non inventés"}
+}

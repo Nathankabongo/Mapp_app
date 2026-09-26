@@ -1,0 +1,21 @@
+{
+  "mineral": "terres rares",
+  "code": "ree",
+  "aliases": ["terres rares", "ree", "rare earths", "tr"],
+  "display_name": "Terres rares (REE)",
+  "geological_context": "Carbonatites / latérites / placers — couverture données limitée",
+  "favorable_lithologies": ["carbonatite", "latérite", "pegmatite"],
+  "alteration_signatures": ["altération latéritique"],
+  "geochemical_elements": ["La", "Ce", "Nd", "Y", "Th"],
+  "geophysical_signatures": ["radiométrie", "magnétisme"],
+  "remote_sensing_indicators": ["anomalies spectrales", "linéaments"],
+  "known_deposit_types": ["carbonatite", "ion-adsorption", "placer"],
+  "exploration_indicators": ["radiométrie", "géochimie REE"],
+  "atlas_layer": null,
+  "raster_commodity": null,
+  "economic_parameters": {
+    "strategic": true,
+    "critical_mineral": true,
+    "note": "Paramètres économiques à configurer — non inventés"
+  }
+}

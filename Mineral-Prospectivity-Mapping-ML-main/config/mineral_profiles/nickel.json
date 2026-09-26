@@ -1,0 +1,21 @@
+{
+  "mineral": "nickel",
+  "code": "ni",
+  "aliases": ["nickel", "ni"],
+  "display_name": "Nickel",
+  "geological_context": "Contextes mafiques-ultramafiques — couverture données limitée en RDC",
+  "favorable_lithologies": ["périodotite", "gabbro", "latérites Ni"],
+  "alteration_signatures": ["latéritisation", "serpentinisation"],
+  "geochemical_elements": ["Ni", "Cu", "Co", "Cr", "PGE"],
+  "geophysical_signatures": ["anomalies magnétiques fortes", "gravimétrie"],
+  "remote_sensing_indicators": ["lithologie exposée", "oxydes"],
+  "known_deposit_types": ["sulfuré magmatique", "latérite"],
+  "exploration_indicators": ["unités mafiques", "anomalies Ni"],
+  "atlas_layer": null,
+  "raster_commodity": null,
+  "economic_parameters": {
+    "strategic": true,
+    "critical_mineral": true,
+    "note": "Paramètres économiques à configurer — non inventés"
+  }
+}

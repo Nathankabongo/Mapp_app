@@ -1,0 +1,21 @@
+{
+  "mineral": "lithium",
+  "code": "li",
+  "aliases": ["lithium", "li"],
+  "display_name": "Lithium",
+  "geological_context": "Pegmatites LCT (Manono-Kitotolo et ceinture kibarienne)",
+  "favorable_lithologies": ["pegmatite", "granite", "schistes"],
+  "alteration_signatures": ["altération pegmatitique", "micas Li"],
+  "geochemical_elements": ["Li", "Cs", "Ta", "Nb", "Sn"],
+  "geophysical_signatures": ["radiométrie", "contrastes de densité"],
+  "remote_sensing_indicators": ["sols exposés", "linéaments"],
+  "known_deposit_types": ["pegmatite LCT", "hard-rock"],
+  "exploration_indicators": ["occurrences Li", "pegmatites", "Ta-Nb associés"],
+  "atlas_layer": "li",
+  "raster_commodity": null,
+  "economic_parameters": {
+    "strategic": true,
+    "critical_mineral": true,
+    "note": "Paramètres économiques à configurer — non inventés"
+  }
+}

@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "critical-minerals-compass"
+version = "0.1.0"
+description = "CriticalMineralsCompass RDC — plateforme nationale d'intelligence minière et géospatiale"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "CriticalMineralsCompass Team" }]
+dependencies = [
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+    "geopandas>=0.14",
+    "shapely>=2.0",
+    "pyproj>=3.6",
+    "scipy>=1.11",
+    "matplotlib>=3.7",
+    "pandas>=2.0",
+    "seaborn>=0.13",
+]
+
+[project.optional-dependencies]
+ml = ["tensorflow>=2.14", "scikeras>=0.12"]
+gis = ["GDAL>=3.6"]
+api = ["fastapi>=0.110", "uvicorn[standard]>=0.27", "pydantic>=2.0", "PyJWT>=2.8"]
+ui = ["streamlit>=1.32", "folium>=0.15", "streamlit-folium>=0.18"]
+report = ["reportlab>=4.0", "openpyxl>=3.1"]
+dev = ["pytest>=8.0", "pytest-cov>=4.1", "ruff>=0.3", "httpx>=0.27"]
+all = [
+    "critical-minerals-compass[ml,gis,api,ui,report,dev]",
+]
+
+[project.scripts]
+critical-compass = "cli.main:entry_point"
+
+[tool.setuptools.packages.find]
+include = ["compass_core*", "cli*", "api*", "app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

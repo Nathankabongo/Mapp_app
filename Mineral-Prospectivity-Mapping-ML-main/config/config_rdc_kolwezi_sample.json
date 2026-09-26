@@ -1,0 +1,30 @@
+{
+  "project_name": "kolwezi-cu-co-sample",
+  "region": {
+    "name": "kolwezi",
+    "crs": "EPSG:32733",
+    "commodity": "cu_co",
+    "province": "Lualaba",
+    "description": "Jeu d'exemple Kolwezi — raster multiphysique synthétique géoréférencé (16 km × 16 km)"
+  },
+  "data": {
+    "raster": "data/rdc/kolwezi/stack_multiphysics.tif",
+    "samples": "data/rdc/kolwezi/deposits_cu_co.gpkg",
+    "training": "data/rdc/kolwezi/training.gpkg",
+    "testing": "data/rdc/kolwezi/testing.gpkg",
+    "output_dir": "outputs/kolwezi_sample"
+  },
+  "model": {
+    "name": "woe",
+    "random_seed": 42,
+    "cv_folds": 3,
+    "grid_search": false,
+    "params": {}
+  },
+  "export": {
+    "geotiff": true,
+    "geopackage": true,
+    "pdf_report": true,
+    "mask_nodata": true
+  }
+}
